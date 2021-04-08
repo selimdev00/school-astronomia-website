@@ -1,0 +1,136 @@
+/* CONFIG */
+/* BACKGROUND COLORS */
+/* TEXT COLORS */
+/* BASE COLORS */
+/* COMPONENTS */
+/* PAGES */
+/* BACKGROUND COLORS */
+/* TEXT COLORS */
+/* BASE COLORS */
+.home-section {
+  padding: 1rem;
+}
+
+#home-landing-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+  background-image: url("/assets/images/home/home-landing-bg-image.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#home-landing-title, #home-planets-title {
+  text-align: center;
+}
+
+#home-landing-title h1, #home-planets-title h1 {
+  font-size: 105px;
+  font-family: "Colatemta";
+  font-weight: 400;
+}
+
+#home-landing-title h2, #home-planets-title h2 {
+  font-family: "Pecita";
+}
+
+#home-planets-section {
+  height: 100vh;
+  background-image: unset;
+}
+
+#home-planets-title {
+  margin-top: 5rem;
+}
+
+#home-planets-grid {
+  padding: 4rem 0;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
+  gap: 3.5rem 2rem;
+}
+
+.home-planets-grid-item {
+  position: relative;
+  overflow: hidden;
+}
+
+.home-planets-grid-item h2 {
+  margin-top: 1rem;
+  font-family: "Pecita";
+  font-weight: 400;
+  text-align: center;
+}
+
+.home-planets-grid-item-not-a-planet {
+  background-color: red;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  top: 3rem;
+  right: -5rem;
+  width: 100%;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  -webkit-box-shadow: 0 0 3px #555;
+          box-shadow: 0 0 3px #555;
+}
+
+/* FONTS */
+@font-face {
+  font-family: Allura;
+  src: url("../fonts/Allura.ttf");
+}
+
+@font-face {
+  font-family: Colatemta;
+  src: url("../fonts/Colatemta.otf");
+}
+
+@font-face {
+  font-family: Pecita;
+  src: url("../fonts/Pecita.otf");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  background-color: #282120;
+  color: #f8efe4;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1200px;
+}
+/*# sourceMappingURL=main.css.map */

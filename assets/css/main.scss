@@ -1,0 +1,37 @@
+/* CONFIG */
+@import "./config/variables";
+
+/* COMPONENTS */
+
+/* PAGES */
+@import "./pages/home";
+
+/* FONTS */
+@font-face {
+  font-family: Allura;
+  src: url("../fonts/Allura.ttf");
+}
+@font-face {
+  font-family: Colatemta;
+  src: url("../fonts/Colatemta.otf");
+}
+@font-face {
+  font-family: Pecita;
+  src: url("../fonts/Pecita.otf");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  background-color: $bodyBackgroundColor;
+  color: $bodyTextColor;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1200px;
+}
