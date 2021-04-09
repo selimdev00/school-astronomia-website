@@ -1,0 +1,13 @@
+{
+    "planets": [
+        { "name": "Mercury", "modelName": "mercury.glb" },
+        { "name": "Venus", "modelName": "venus.glb" },
+        { "name": "Earth", "modelName": "earth.glb" },
+        { "name": "Mars", "modelName": "mars.glb" },
+        { "name": "Jupiter", "modelName": "jupiter.glb" },
+        { "name": "Saturn", "modelName": "saturn.glb" },
+        { "name": "Uranus", "modelName": "uranus.glb" },
+        { "name": "Neptune", "modelName": "neptune.glb" },
+        { "name": "Pluto", "modelName": "pluto.glb", "notAPlanet": true }
+      ]
+}
