@@ -8,13 +8,13 @@
 #home-landing-section {
   @include flex(row, center, center);
   height: 100vh;
-  background-image: url("/assets/images/home/home-landing-bg-image.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 #home-landing-title {
   text-align: center;
+  z-index: 5;
   h1 {
     font-size: 105px;
     font-family: "Colatemta";
@@ -26,7 +26,6 @@
 }
 
 #home-planets-section {
-  height: 100vh;
   background-image: unset;
 }
 

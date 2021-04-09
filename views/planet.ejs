@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include('config/head') %>
+  <body>
+    <main>
+      <section
+        class="planet-section"
+        id="planet-landing-section"
+        style="background-image: url('/images/home/home-landing-bg-image.jpg')"
+      >
+        <div class="container">
+          <div id="planet-landing-wrapper">
+            <div id="planet-link-to-home-page">
+                <a href="/"><p><i class="fa fa-home"></i></a></p>
+              </div>
+            <div id="planet-link-to-info-section">
+              <a href="#planet-info-section"><p><i class="fa fa-chevron-circle-down"></i></a></p>
+            </div>
+            <div id="planet-model">
+              <model-viewer
+                src="/images/planets/<%= planetModelName %>.glb"
+                alt="A 3D model of an astronaut"
+                auto-rotate
+                camera-controls
+                style="height: 100vh; width: 100vw"
+              ></model-viewer>
+            </div>
+            <div id="planet-landing-title">
+              <h2>welcome to the world of</h2>
+              <h1><%= planetName %></h1>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="planet-section" id="planet-info-section">
+        <div class="container">
+          <div id="planet-info-wrapper">
+            <div id="planet-info-title">
+              <h2>Info about</h2>
+              <h1><%= planetName %></h1>
+            </div>
+
+            <div id="planet-info-content"><%- planetContent %></div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <%- include('components/footer') %>
+  </body>
+</html>

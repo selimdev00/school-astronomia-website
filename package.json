@@ -9,7 +9,9 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.3",
     "@google/model-viewer": "^1.6.0",
-    "vue": "^3.0.11"
+    "ejs": "^3.1.6",
+    "express": "^4.17.1"
   }
 }

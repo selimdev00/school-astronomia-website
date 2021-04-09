@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include('config/head') %>
+  <body>
+    <main>
+      <section
+        class="home-section"
+        id="home-landing-section"
+        style="background-image: url('/images/home/home-landing-bg-image.jpg')"
+      >
+        <div class="container">
+          <div id="home-landing-wrapper">
+            <div id="home-landing-title">
+              <h2>welcome to the world of</h2>
+              <h1>Astronomia</h1>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="home-section" id="home-planets-section">
+        <div class="container">
+          <div id="home-planets-wrapper">
+            <div id="home-planets-title">
+              <h2>Expore the</h2>
+              <h1>planets</h1>
+            </div>
+            <div id="home-planets-grid">
+              <% for (let i = 0; i < planets.length; i++) { %>
+              <div class="home-planets-grid-item">
+                <model-viewer
+                  src="/images/planets/<%= planets[i].modelName %>"
+                  alt="A 3D model of an astronaut"
+                  auto-rotate
+                  camera-controls
+                  disable-zoom
+                  style="height: 250px"
+                ></model-viewer>
+                <a href="/planets/<%= planets[i].name %>"
+                  ><h2><%= planets[i].name %></h2></a
+                >
+                <% if (planets[i].notAPlanet) { %>
+                <div class="home-planets-grid-item-not-a-planet">
+                  <span>Not a planet anymore</span>
+                </div>
+                <% } %>
+              </div>
+              <% } %>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <%- include('components/footer') %>
+  </body>
+</html>

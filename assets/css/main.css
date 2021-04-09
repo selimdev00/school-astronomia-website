@@ -3,15 +3,52 @@
 /* TEXT COLORS */
 /* BASE COLORS */
 /* COMPONENTS */
+/* BACKGROUND COLORS */
+/* TEXT COLORS */
+/* BASE COLORS */
+footer {
+  background-color: #131313;
+}
+
+#footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 2rem;
+}
+
+#footer p {
+  margin-bottom: 1rem;
+}
+
+#footer p a {
+  color: #9e78e6;
+}
+
+#footer-heart-icon {
+  margin: 0 5px;
+  color: red;
+}
+
 /* PAGES */
 /* BACKGROUND COLORS */
 /* TEXT COLORS */
 /* BASE COLORS */
-.home-section {
+.home-section, .planet-section {
   padding: 1rem;
 }
 
-#home-landing-section {
+#home-landing-section, #planet-landing-section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -26,31 +63,30 @@
       -ms-flex-align: center;
           align-items: center;
   height: 100vh;
-  background-image: url("/assets/images/home/home-landing-bg-image.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-#home-landing-title, #home-planets-title {
+#home-landing-title, #home-planets-title, #planet-info-title, #planet-landing-title {
   text-align: center;
+  z-index: 5;
 }
 
-#home-landing-title h1, #home-planets-title h1 {
+#home-landing-title h1, #home-planets-title h1, #planet-info-title h1, #planet-landing-title h1 {
   font-size: 105px;
   font-family: "Colatemta";
   font-weight: 400;
 }
 
-#home-landing-title h2, #home-planets-title h2 {
+#home-landing-title h2, #home-planets-title h2, #planet-info-title h2, #planet-landing-title h2 {
   font-family: "Pecita";
 }
 
 #home-planets-section {
-  height: 100vh;
   background-image: unset;
 }
 
-#home-planets-title {
+#home-planets-title, #planet-info-title {
   margin-top: 5rem;
 }
 
@@ -102,6 +138,69 @@
           box-shadow: 0 0 3px #555;
 }
 
+#planet-landing-title {
+  mix-blend-mode: overlay;
+  position: relative;
+}
+
+#planet-model {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#planet-link-to-info-section, #planet-link-to-home-page {
+  position: absolute;
+  bottom: 2rem;
+  text-align: center;
+  left: 0;
+  right: 0;
+  font-size: 25px;
+  z-index: 10;
+  padding: 1rem;
+}
+
+#planet-link-to-info-section p, #planet-link-to-home-page p {
+  cursor: pointer;
+}
+
+#planet-link-to-info-section p:hover, #planet-link-to-home-page p:hover {
+  opacity: 0.7;
+}
+
+#planet-link-to-home-page {
+  top: 2rem;
+  bottom: unset;
+}
+
+#planet-info-content {
+  margin-top: 2rem;
+}
+
+#planet-info-content ul {
+  margin: 1.4rem 0;
+}
+
+#planet-info-content p,
+#planet-info-content li {
+  margin: 12px 0;
+  font-size: 20px;
+}
+
 /* FONTS */
 @font-face {
   font-family: Allura;
@@ -121,6 +220,15 @@
 * {
   margin: 0;
   padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+  color: #f8efe4;
 }
 
 body {

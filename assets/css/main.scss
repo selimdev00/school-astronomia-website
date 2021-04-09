@@ -2,9 +2,11 @@
 @import "./config/variables";
 
 /* COMPONENTS */
+@import "./components/footer";
 
 /* PAGES */
 @import "./pages/home";
+@import "./pages/planet";
 
 /* FONTS */
 @font-face {
@@ -23,6 +25,15 @@
 * {
   margin: 0;
   padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+  color: $bodyTextColor;
 }
 
 body {
