@@ -10,12 +10,16 @@
       >
         <div class="container">
           <div id="planet-landing-wrapper">
-            <div id="planet-link-to-home-page">
-                <a href="/"><p><i class="fa fa-home"></i></a></p>
+            <a href="/">
+              <div id="planet-link-to-home-page">
+                <p><i class="fa fa-home"></i></p>
               </div>
-            <div id="planet-link-to-info-section">
-              <a href="#planet-info-section"><p><i class="fa fa-chevron-circle-down"></i></a></p>
-            </div>
+            </a>
+            <a href="#planet-info-section">
+              <div id="planet-link-to-info-section">
+                <p><i class="fa fa-chevron-circle-down"></i></p>
+              </div>
+            </a>
             <div id="planet-model">
               <model-viewer
                 src="/images/planets/<%= planetModelName %>.glb"
